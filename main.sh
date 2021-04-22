@@ -6,7 +6,6 @@
 #          M122 EPSIC                                #
 ######################################################
 
-
 ##############VARIABLE DE DÉPART##############
 
 rouge='\e[0;31m' # Couleur pour les erreurs anti-triche
