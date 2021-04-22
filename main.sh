@@ -1,9 +1,9 @@
 #!/bin/bash
 
 ######################################################
-#          Create and edit by Skize and Jopit        #
-#          Last edit 19.04.2021                      #
-#          M122 EPSIC                                #
+#         Créer par Lucas Ruffiner et Joaquim Pttet  #
+#         Last edit 19.04.2021                       #
+#         M122 EPSIC                                 #
 ######################################################
 
 ##############VARIABLE DE DÉPART##############
