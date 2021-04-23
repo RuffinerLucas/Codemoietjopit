@@ -28,11 +28,11 @@ menu() {
 
 Voici les règles : Pour gagner la partie faut aligner de manière 
 horizontal,vertical ou en diagonal les symboles suivant : X et O 
+"
 
-La partie va commencer dans 10 secondes"
-sleep 10
+read -p 'Taper Enter pour continuer...'
+
 }
-
 ##############FONCTION TABLEAU##############
 tableau() { 
 clear
