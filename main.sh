@@ -1,25 +1,26 @@
 #!/bin/bash
 
 ######################################################
-#         Créer par Lucas Ruffiner et Joaquim Pttet  #
+#         Créer par Lucas Ruffiner et Joaquim Pittet #
 #         Last edit 19.04.2021                       #
 #         M122 EPSIC                                 #
+#         Version 2.0                                #
 ######################################################
 
 ##############VARIABLE DE DÉPART##############
 
 rouge='\e[0;31m' # Couleur pour les erreurs anti-triche
-neutre='\e[0;m'
+neutre='\e[0;m' # Couleur qui permet de ne pas faire déborder les autre couleur
 bleu='\e[1;34m' # Couleur pour les victoires
 vert='\e[1;32m' # Couleur pour l'égalité 
 
-J1="X"
-J2="O"
+J1="X" # Assigne le symbole X au joueur 1
+J2="O" # Assigne le symbole O au joueur 2
 
-tour=1
-jeux=true
+tour=1 # Fais le suivi des tours pair et impair
+jeux=true # Fais le suivi du déroulement du jeu
 
-case=( 1 2 3 4 5 6 7 8 9 )
+case=( 1 2 3 4 5 6 7 8 9 ) # Assigne les valeurs aux différents cases
 
 ##############FONCTION MENU##############
 menu() {  
@@ -33,6 +34,7 @@ horizontal,vertical ou en diagonal les symboles suivant : X et O
 read -p 'Taper Enter pour continuer...'
 
 }
+
 ##############FONCTION TABLEAU##############
 tableau() { 
 clear
@@ -132,7 +134,7 @@ rejouer() {
     echo "Voulez-vous rejouer ? (y/n)" >&2
     read -rsn1 input
     if [ "$input" = "y" ]; then
-      turn=1
+      tour=1
       jeux=true
       case=( 1 2 3 4 5 6 7 8 9 )
       fin_jeu
